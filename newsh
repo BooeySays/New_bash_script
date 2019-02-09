@@ -1,8 +1,8 @@
 #!/bin/bash
 
-filename="$1"
+newsh-filename="$1"
 echo -e '''#!/bin/bash
-''' >> "$filename";
-nano +3,1 $filename;
-unset filename;
+''' >> "$newsh-filename";
+nano +3,1 "$newsh-filename";
+unset newsh-filename;
 
