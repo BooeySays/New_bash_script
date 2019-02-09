@@ -1,8 +1,8 @@
-# ＤＡＴＥ: `date`
-# ＦＩＬＥ: "$filename"
+# ＤＡＴＥ: "$newsh-date"
+# ＦＩＬＥ: "$newsh-filename"
 # ＤＥＳＣ: "$newsh-desc"
 # ＩＮＳＴ: "$newsh-install"
-# ＳＮＴＸ:
-#    "$newsh-use"
+# ＳＮＴＸ: "$newsh-use"
+# ＸＴＲＡ: "$newsh-xtra"
 #    
 #
