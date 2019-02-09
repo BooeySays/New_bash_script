@@ -1,0 +1,21 @@
+#!/bin/bash
+
+if [ $1 == '-x' ]; then
+    filename="$2"
+    echo -e '''#!/bin/bash
+    ''' >> "$filename";
+    nano +3,1 $filename;
+    chmod +x $filename;
+    unset filename;
+elif [ $# == '0' ]; then
+    echo -e "\n\t⚠️\033[01;30;43m ERROR \033[m\n\t\033[01;37mMissing ARG/OPTS. Run with '--help' for more information\n\n";
+    echo -e "\tOptions:\n\t'-x'\tAfter creating the new script, chmod is executed to make the file an executable\n\n\t'--help'\tDisplays this help screen\n\n";
+elif [ $1 == '--help' ]; then
+    echo -e "🚧 Help Screen under construction 🚧";
+else
+    filename="$1"
+    echo -e '''#!/bin/bash
+    ''' >> "$filename";
+    nano +3,1 $filename;
+    unset filename;
+fi
